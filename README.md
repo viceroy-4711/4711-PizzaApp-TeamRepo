@@ -13,9 +13,9 @@ An example, using menu items at a fast food place...
 `data/menuitems.csv`:
 
     id,name,category,price
-    BM,Big Mac,entrees,5.25
-    MF,Medium fried,sides,2.00
-    LF,Large fries,sides,3.00
+    BM,Big Mac,entree,5.25
+    MF,Medium fried,side,2.00
+    LF,Large fries,side,3.00
 
 `application/models/themenu.php`:
 
@@ -30,4 +30,7 @@ implemented by the CSV_Model...
 
     $this->load->model('themenu;);
     $all_the_items = $this->themenu->all();
+    ...
+    // get all of the entrees
+    $subset = $this->themenu->where('category','entree');
     ...
