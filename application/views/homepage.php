@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PIZZA</title>
+	<title>PIZZA!</title>
 </head>
 <body>
 

@@ -6,7 +6,13 @@
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
-	</head>
+        <!--CSS for background and some text -->
+        <link rel="stylesheet" type="text/css" media="all" href="../css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../css/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../css/lightbox.css" />
+
+    </head>
 	<body>
         <div id="container">
             <span class="mynav">
