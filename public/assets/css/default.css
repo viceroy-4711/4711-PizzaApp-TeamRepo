@@ -1,10 +1,14 @@
-#pizzacrust {
+.layer img {
     position: fixed;
     /*for the img inside your div */
     height: 600px;
     left: 50px;
-    z-index: -400;
+    display: none;
+}
 
+#pizzacrust {
+    z-index: -400;
+    display: inline;
 }
 
 .ingrediants img {
@@ -15,6 +19,7 @@ div.ingrediants {
     position: absolute;
     right: 400px;
 }
+
 
 #sauces {
     z-index: -300;

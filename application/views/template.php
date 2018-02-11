@@ -9,6 +9,12 @@
 	</head>
 	<body>
         <div id="container">
+            <span class="mynav">
+                    <ul>
+                       <li><a href="/welcome">Home</a></li>
+                        <li><a href="/catalog">Catalog</a></li>
+                    </ul>
+                </span>
             <div class="title-container">
                 <h1>{pagetitle}</h1>
             </div>
