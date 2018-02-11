@@ -6,7 +6,7 @@
  * Time: 12:58 AM
  */
 
-class Accesories extends CSV_Model
+class Accessories extends CSV_Model
 {
     public $id;
     public $name;
