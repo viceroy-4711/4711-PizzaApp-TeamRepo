@@ -1,4 +1,4 @@
-id,name,image,calories,protein,carbohydrates,categoriesId
+accessoryId,name,image,calories,protein,carbohydrates,categoryId
 0,tomato,assets/images/sauce_tomato.png,180,2,6,0
 1,bbq,assets/images/sauce_bbq.png,210,1,12,0
 2,ranch,assets/images/sauce_ranch.png,450,6,7,0

@@ -8,7 +8,7 @@
 
 class Accessories extends CSV_Model
 {
-    public $id;
+    public $accessoryId;
     public $name;
     public $image;
     public $calories;
@@ -21,6 +21,6 @@ class Accessories extends CSV_Model
      */
     function __construct()
     {
-        parent::__construct(APPPATH . "../data/Accessories.csv", "id", "accessories");
+        parent::__construct(APPPATH . "../data/Accessories.csv", "accessoryId", "accessories");
     }
 }

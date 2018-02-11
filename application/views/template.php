@@ -11,7 +11,7 @@
         <div id="container">
             <span class="mynav">
                     <ul>
-                       <li><a href="/welcome">Home</a></li>
+                       <li><a href="/homepage">Home</a></li>
                         <li><a href="/catalog">Catalog</a></li>
                     </ul>
                 </span>

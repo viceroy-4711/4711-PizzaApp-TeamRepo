@@ -8,7 +8,7 @@
 
 class Categories extends CSV_Model
 {
-    public $id;
+    public $categoryId;
     public $name;
 
     /**
@@ -16,6 +16,6 @@ class Categories extends CSV_Model
      */
     function __construct()
     {
-        parent::__construct(APPPATH . "../data/Categories.csv", "id", "categories");
+        parent::__construct(APPPATH . "../data/Categories.csv", "categoryId", "categories");
     }
 }
