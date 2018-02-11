@@ -9,9 +9,10 @@
 	</head>
 	<body>
         <div id="container">
+            <div class="title-container">
+                <h1>{pagetitle}</h1>
+            </div>
 			{content}
-			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. 
-				{ci_version}</p>
         </div>
 	</body>
 </html>
