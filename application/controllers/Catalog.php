@@ -10,6 +10,10 @@ class Catalog extends Application
 {
     public function index()
     {
+        $accessories = $this->accessories->all();
+        $categories = $this->categories->all();
+        $this->data['accessories'] = $accessories;
+        $this->data['categories'] = $categories;
         $this->data['pagetitle'] = 'Customize Your Pizza';
         $this->data['pagebody'] = 'catalog';
         $this->render();

@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends Application
+class Homepage extends Application
 {
 
 	/**
@@ -19,7 +19,14 @@ class Welcome extends Application
 	 */
 	public function index()
 	{
-        $this->data['pagebody'] = 'welcome';
+        $sets = $this->sets->all();
+        $accessories = $this->accessories->all();
+        $categories = $this->categories->all();
+        $this->data['sets'] = $sets;
+        $this->data['accessories'] = $accessories;
+        $this->data['categories'] = $categories;
+        $this->data['pagetitle'] = 'Preset Pizza';
+        $this->data['pagebody'] = 'homepage';
         $this->render();
 	}
 
