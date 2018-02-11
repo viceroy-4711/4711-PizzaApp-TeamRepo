@@ -1,25 +1,38 @@
 <div class="catalogBody">
+
+<!--  the area for all accessories to be overlayed on a pizza crust -->
     <div class="layer">
-    <!-- The oizza crust for adding ingrediants on   -->
-    <img id="pizzacrust" src="assets/images/crust.png" alt="PizzaCrust">
+        <!-- The pizza crust for adding ingrediants on  -->
+        <img id="pizzacrust" src="assets/images/crust.png" alt="PizzaCrust">
 
-    <img id="tomatoLayer" src="assets/images/sauce_tomato.png">
-    <img id="bbqLayer" src="assets/images/sauce_bbq.png">
-    <img id="ranchLayer" src="assets/images/sauce_ranch.png">
-    <img id="blueLayer" src="assets/images/cheese_blue.png">
-    <img id="cheddarLayer" src="assets/images/cheese_cheddar.png">
-    <img id="mozzarellaLayer" src="assets/images/cheese_mozzarella.png">
-    <img id="anchovieLayer" src="assets/images/topping1_anchovie.png">
-    <img id="pepperoniLayer" src="assets/images/topping1_pepperoni.png">
-    <img id="peppersLayer" src="assets/images/topping2_peppers.png">
-    <img id="mushroomsLayer" src="assets/images/topping2_mushrooms.png">
-
+        <!-- all the accessories -->
+        <?php $temp = -1; ?>
+        <?php foreach ($accessories as $accessory): ?>
+            <?php if($temp < $accessory->accessoryId): ?>
+                <?php $temp = $accessory->accessoryId; ?>
+                <img id = "<?php echo ($accessory->name)."Layer" ?>" src="<?php echo $accessory->image?>" >
+            <?php endif; ?>
+        <?php endforeach; ?>
     </div>
+
 
     <!--All the ingrediants to be added on the pizza-->
     <div id="allIngrediants" class="ingrediants">
+        <?php $temp = -1; ?>
+        <?php foreach ($accessories as $accessory): ?>
+            <?php if($temp < $accessory->categoryId): ?>
+                <?php $temp = $accessory->categoryId; ?>
+                <h3><?php echo $categories[$temp]->name ?></h3>
+            <?php endif; ?>
+
+
+
+        <?php endforeach; ?>
+
+
         <h3>Sauce</h3>
         <div id="sauces">
+
             <img id="tomato" src="assets/images/sauce_tomato.png" alt="Tomato" onclick="setVisibility(this)">
             <img id="bbq" src="assets/images/sauce_bbq.png" alt="BBQ" onclick="setVisibility(this)">
             <img id="ranch" src="assets/images/sauce_ranch.png" alt="Ranch" onclick="setVisibility(this)" >

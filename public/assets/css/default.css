@@ -1,8 +1,8 @@
 .layer img {
     position: fixed;
     /*for the img inside your div */
-    height: 600px;
-    left: 50px;
+    height: 500px;
+    left: 100px;
     display: none;
 }
 
