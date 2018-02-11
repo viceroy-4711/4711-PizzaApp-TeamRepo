@@ -28,6 +28,7 @@
             <div class="tooltip">
                 <img id = "<?php echo ($accessory->name) ?>" src="<?php echo $accessory->image ?>" onclick="setVisibility(this)" >
                 <span class="tooltiptext">
+                    <h4><?php echo $accessory->name ?></h4>
                     <p>calories: <?php echo $accessory->calories ?></p>
                     <p>protein: <?php echo $accessory->protein ?></p>
                     <p>carbohydrates <?php echo $accessory->carbohydrates?></p>
