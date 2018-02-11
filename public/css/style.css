@@ -1,5 +1,5 @@
 /* CSS definition file containing sitestyle stylesheets */
-body {background-color: #412a2c;}
+body {background-color: #a7b8c9;}
 #wrapper {max-width: 960px; margin:4px auto;margin-top:1em;padding:1em;padding-right:8px;box-shadow:0 0 5px  5px white;
 	font-family:  Arial, Helvetica, sans-serif;font-size: 13px;color: #F1F5F8;}
 
@@ -8,7 +8,7 @@ body {background-color: #412a2c;}
 .mynav {float:right}
 .mynav ul {list-style-type:none; padding-top:20px;font-size: 120%;}
 .mynav ul li {float:left; margin-right:15px;color:white;list-style-type:none;}
-.mynav a {text-decoration:none;color: #b66621; font-weight:bold;}
+.mynav a {text-decoration:none;color: #f8f0eb; font-weight:bold;}
 .mynav a:hover  {background-color: lavender}
 
 .alone { clear:both; margin:10px;}
