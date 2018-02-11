@@ -1,3 +1,52 @@
+.layer img {
+    position: fixed;
+    /*for the img inside your div */
+    height: 600px;
+    left: 50px;
+    display: none;
+}
+
+#pizzacrust {
+    z-index: -400;
+    display: inline;
+}
+
+.ingrediants img {
+    height: 80px;
+}
+
+div.ingrediants {
+    position: absolute;
+    right: 400px;
+}
+
+
+#sauces {
+    z-index: -300;
+}
+
+#cheese {
+    z-index: -200;
+}
+
+#topping1 {
+    z-index: -100;
+}
+
+.attributes {
+    position: absolute;
+    top: 400px;
+    right: 150px;
+}
+
+
+
+
+
+
+
+
+/**
 ::selection { background-color: #E13300; color: white; }
 ::-moz-selection { background-color: #E13300; color: white; }
 
@@ -53,3 +102,7 @@ p.footer {
 	border: 1px solid #D0D0D0;
 	box-shadow: 0 0 8px #D0D0D0;
 }
+*/
+
+
+
