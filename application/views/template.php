@@ -17,8 +17,8 @@
         <div id="container">
             <span class="mynav">
                     <ul>
-                       <li><a href="/homepage">Home</a></li>
-                        <li><a href="/catalog">Catalog</a></li>
+                       <li><a href="/homepage">HOME</a></li>
+                        <li><a href="/catalog">CATALOG</a></li>
                     </ul>
                 </span>
             <div class="title-container">

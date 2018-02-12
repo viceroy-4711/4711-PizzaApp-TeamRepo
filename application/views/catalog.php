@@ -47,7 +47,7 @@
             <input type="text" name="cheese" value="" hidden>
             <input type="text" name="topping1" value="" hidden>
             <input type="text" name="topping2" value="" hidden>
-            <input id="customizesave"  type="submit" name="submit" value="Save">
+            <input id="customizesave" class="myButton" type="submit" name="submit" value="Save">
         </form>
     </div>
 
