@@ -24,8 +24,7 @@
                 <button id = "<?php echo $set->id ?>" class="myButton" onclick="displayPreset(this)"><?php echo $set->name ?></button>
             <?php endif; ?>
         <?php endforeach; ?>
-<!--            <input id="customizesave" class="myButton" type="submit" name="submit" value="Classic Pizza">-->
-                    <!-- -->
+        <!--  <input id="customizesave" class="myButton" type="submit" name="submit" value="Classic Pizza"> -->
       <div>
         <h3>Calories: 50</h3>
         <h3>Protein: 20</h3>
@@ -50,6 +49,7 @@
     <?php endif; ?>
     <?php endforeach; ?>
 
+    // Function to display preset pizza information
     function displayPreset(button) {
         Array.prototype.slice.call(document.querySelectorAll('.layer img'), 1).forEach(function(img) {img.style.display = 'none';} )
 

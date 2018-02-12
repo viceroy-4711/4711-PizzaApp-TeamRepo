@@ -6,6 +6,11 @@
  * Time: 12:36 PM
  */
 
+/**
+ * Info controller
+ *
+ * Converts model data into JSON format.
+ */
 class Info extends CI_Controller
 {
     function __construct()

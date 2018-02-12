@@ -6,6 +6,11 @@
  * Time: 1:02 AM
  */
 
+/**
+ * Sets model
+ *
+ * Sets up the data that creates each set of pizza.
+ */
 class Sets extends CSV_Model
 {
     public $id;
