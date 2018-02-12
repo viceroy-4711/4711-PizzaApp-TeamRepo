@@ -6,6 +6,11 @@
  * Time: 10:53 PM
  */
 
+/**
+ * Catalog class
+ *
+ * Creates the controller for catalog page that displays the Catalog view.
+ */
 class Catalog extends Application
 {
     public function index()
