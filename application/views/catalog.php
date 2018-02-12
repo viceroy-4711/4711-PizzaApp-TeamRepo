@@ -1,58 +1,59 @@
 <div class="catalogBody">
+
+<!--  the area for all accessories to be overlayed on a pizza crust -->
     <div class="layer">
-    <!-- The oizza crust for adding ingrediants on   -->
-    <img id="pizzacrust" src="assets/images/crust.png" alt="PizzaCrust">
+        <!-- The pizza crust for adding ingrediants on  -->
+        <img id="pizzacrust" src="assets/images/crust.png" alt="PizzaCrust">
 
-    <img id="tomatoLayer" src="assets/images/sauce_tomato.png">
-    <img id="bbqLayer" src="assets/images/sauce_bbq.png">
-    <img id="ranchLayer" src="assets/images/sauce_ranch.png">
-    <img id="blueLayer" src="assets/images/cheese_blue.png">
-    <img id="cheddarLayer" src="assets/images/cheese_cheddar.png">
-    <img id="mozzarellaLayer" src="assets/images/cheese_mozzarella.png">
-    <img id="anchovieLayer" src="assets/images/topping1_anchovie.png">
-    <img id="pepperoniLayer" src="assets/images/topping1_pepperoni.png">
-    <img id="peppersLayer" src="assets/images/topping2_peppers.png">
-    <img id="mushroomsLayer" src="assets/images/topping2_mushrooms.png">
-
+        <!-- all the accessories -->
+        <?php $temp = -1; ?>
+        <?php foreach ($accessories as $accessory): ?>
+            <?php if($temp < $accessory->accessoryId): ?>
+                <?php $temp = $accessory->accessoryId; ?>
+                <img id = "<?php echo ($accessory->name)."Layer" ?>" src="<?php echo $accessory->image?>" >
+            <?php endif; ?>
+        <?php endforeach; ?>
     </div>
+
 
     <!--All the ingrediants to be added on the pizza-->
     <div id="allIngrediants" class="ingrediants">
-        <h3>Sauce</h3>
-        <div id="sauces">
-            <img id="tomato" src="assets/images/sauce_tomato.png" alt="Tomato" onclick="setVisibility(this)">
-            <img id="bbq" src="assets/images/sauce_bbq.png" alt="BBQ" onclick="setVisibility(this)">
-            <img id="ranch" src="assets/images/sauce_ranch.png" alt="Ranch" onclick="setVisibility(this)" >
 
-        </div>
-        <h3>Cheese</h3>
-        <div id="cheese">
-            <img src="assets/images/cheese_blue.png" alt="Blue" >
-            <img src="assets/images/cheese_cheddar.png" alt="Cheddar" >
-            <img src="assets/images/cheese_mozzarella.png" alt="Mozzarella" >
-        </div>
-
-        <h3>Topping 1</h3>
-        <div id="topping1">
-            <img src="assets/images/topping1_anchovie.png" alt="Anchovie" >
-            <img src="assets/images/topping1_pepperoni.png" alt="Pepperoni" >
-        </div>
-
-        <h3>Topping 2</h3>
-        <div id="topping2">
-            <img src="assets/images/topping2_peppers.png" alt="Peppers" >
-            <img src="assets/images/topping2_mushrooms.png" alt="Mushrooms" >
-        </div>
+        <?php $temp = -1; ?>
+        <?php foreach ($accessories as $accessory): ?>
+            <?php if($temp < $accessory->categoryId): ?>
+                <?php $temp = $accessory->categoryId; ?>
+                <h3><?php echo $categories[$temp]->name ?></h3>
+            <?php endif; ?>
+            <div class="tooltip">
+                <img id = "<?php echo ($accessory->name) ?>" src="<?php echo $accessory->image ?>" onclick="setVisibility(this)" >
+                <span class="tooltiptext">
+                    <h4><?php echo $accessory->name ?></h4>
+                    <p>calories: <?php echo $accessory->calories ?></p>
+                    <p>protein: <?php echo $accessory->protein ?></p>
+                    <p>carbohydrates <?php echo $accessory->carbohydrates?></p>
+                </span>
+            </div>
+        <?php endforeach; ?>
     </div>
 
+        <!-- hard coded for this assignment-->
     <div class="attributes">
         <h3>Calories: 50</h3>
         <h3>Protein: 20</h3>
         <h3>Carbohydrates:100</h3>
+        <form class="" action="" method="POST">
+            <input type="text" name="sauce" value="" hidden>
+            <input type="text" name="cheese" value="" hidden>
+            <input type="text" name="topping1" value="" hidden>
+            <input type="text" name="topping2" value="" hidden>
+            <input id="customizesave"  type="submit" name="submit" value="Save">
+        </form>
     </div>
 
-</div>
 
+
+</div>
 
 
 <script>
