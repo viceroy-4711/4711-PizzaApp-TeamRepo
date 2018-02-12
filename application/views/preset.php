@@ -10,7 +10,7 @@
     </ul>
     <div class="layer">
         <!-- The pizza crust for adding ingrediants on  -->
-        <img id="pizzacrust" src="assets/images/crust.png" alt="PizzaCrust">
+        <img id="pizzacrust" src="../../assets/images/crust.png" alt="PizzaCrust">
 
     </div>
 </div>
