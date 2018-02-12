@@ -15,5 +15,15 @@
     <?php endif; ?>
 <?php endforeach; ?>
 
+<ul>
+    {sets}
+    <li>
+        <a href="/Homepage/preset/{id}"> {name}</a>
+    </li>
+    {/sets}
+</ul>
+
+
+
 </body>
 </html>

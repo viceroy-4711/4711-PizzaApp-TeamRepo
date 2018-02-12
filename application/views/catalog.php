@@ -37,7 +37,7 @@
         <?php endforeach; ?>
     </div>
 
-        <!-- hard coded for this assignment-->
+    <!-- hard coded for this assignment-->
     <div class="attributes">
         <h3>Calories: 50</h3>
         <h3>Protein: 20</h3>
