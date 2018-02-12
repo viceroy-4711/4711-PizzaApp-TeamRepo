@@ -1,6 +1,6 @@
 <div class="catalogBody">
 
-<!--  the area for all accessories to be overlayed on a pizza crust -->
+    <!--  the area for all accessories to be overlayed on a pizza crust -->
     <div class="layer">
         <!-- The pizza crust for adding ingrediants on  -->
         <img id="pizzacrust" src="assets/images/crust.png" alt="PizzaCrust">

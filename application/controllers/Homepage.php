@@ -2,6 +2,11 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ * Homepage controller
+ *
+ *Displays contents on the homepage view.
+ */
 class Homepage extends Application
 {
 
