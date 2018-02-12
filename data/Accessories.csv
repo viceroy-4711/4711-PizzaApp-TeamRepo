@@ -1,0 +1,11 @@
+accessoryId,name,image,calories,protein,carbohydrates,categoryId
+0,tomato,assets/images/sauce_tomato.png,180,2,6,0
+1,bbq,assets/images/sauce_bbq.png,210,1,12,0
+2,ranch,assets/images/sauce_ranch.png,450,6,7,0
+3,blue,assets/images/cheese_blue.png,280,20,1,1
+4,cheddar,assets/images/cheese_cheddar.png,300,20,1,1
+5,mozzarella,assets/images/cheese_mozzarella.png,290,20,1,1
+6,anchovies,assets/images/topping1_anchovie.png,120,29,0,2
+7,pepperoni,assets/images/topping1_pepperoni.png,215,23,0,2
+8,peppers,assets/images/topping2_peppers.png,80,2,9,3
+9,mushrooms,assets/images/topping2_mushrooms.png,90,3,0,3
