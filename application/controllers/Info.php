@@ -33,13 +33,21 @@ class Info extends CI_Controller
         } else {
             $data = json_encode($this->categories->get($key));
         }
-        
+
         echo $data;
     }
 
     function catalog($key = null)
     {
+        $this->load->model('Accessories');
+        if(is_null($key))
+        {
+            $data = json_encode($this->accessories->all());
+        } else {
+            $data = json_encode ($this->accessories->get($key));
+        }
 
+        echo $data;
     }
 
     function bundle($key = null)
