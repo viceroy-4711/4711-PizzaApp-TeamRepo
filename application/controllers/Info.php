@@ -33,6 +33,7 @@ class Info extends CI_Controller
         } else {
             $data = json_encode($this->categories->get($key));
         }
+        
         echo $data;
     }
 
