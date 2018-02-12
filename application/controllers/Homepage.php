@@ -46,7 +46,7 @@ class Homepage extends Application
         $this->data['accessories'] = $accessories;
         $this->data['categories'] = $categories;
         $this->data['pagetitle'] = 'Preset Pizzas';
-        $this->data['pagebody'] = 'homepage';
+        $this->data['pagebody'] = 'preset';
         $this->render();
     }
 

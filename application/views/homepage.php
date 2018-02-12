@@ -23,7 +23,5 @@
     {/sets}
 </ul>
 
-
-
 </body>
 </html>
