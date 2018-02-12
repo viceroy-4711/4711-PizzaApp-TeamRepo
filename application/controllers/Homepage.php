@@ -30,9 +30,24 @@ class Homepage extends Application
         $this->data['sets'] = $sets;
         $this->data['accessories'] = $accessories;
         $this->data['categories'] = $categories;
-        $this->data['pagetitle'] = 'Preset Pizza';
+        $this->data['pagetitle'] = 'Preset Pizzas';
         $this->data['pagebody'] = 'homepage';
         $this->render();
 	}
+
+	public function preset($id)
+    {
+        $sets = $this->sets->all();
+        $accessories = $this->accessories->all();
+        $categories = $this->categories->all();
+        $set = $sets[$id];
+
+        $this->data['sets'] = $sets;
+        $this->data['accessories'] = $accessories;
+        $this->data['categories'] = $categories;
+        $this->data['pagetitle'] = 'Preset Pizzas';
+        $this->data['pagebody'] = 'preset';
+        $this->render();
+    }
 
 }
