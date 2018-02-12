@@ -6,6 +6,11 @@
  * Time: 12:58 AM
  */
 
+/**
+ * Accessories model
+ *
+ * Extends CSV Model and contains details about each pizza item.
+ */
 class Accessories extends CSV_Model
 {
     public $accessoryId;

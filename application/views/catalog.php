@@ -1,6 +1,6 @@
 <div class="catalogBody">
 
-<!--  the area for all accessories to be overlayed on a pizza crust -->
+    <!--  the area for all accessories to be overlayed on a pizza crust -->
     <div class="layer">
         <!-- The pizza crust for adding ingrediants on  -->
         <img id="pizzacrust" src="assets/images/crust.png" alt="PizzaCrust">
@@ -37,7 +37,7 @@
         <?php endforeach; ?>
     </div>
 
-        <!-- hard coded for this assignment-->
+    <!-- hard coded for this assignment-->
     <div class="attributes">
         <h3>Calories: 50</h3>
         <h3>Protein: 20</h3>
