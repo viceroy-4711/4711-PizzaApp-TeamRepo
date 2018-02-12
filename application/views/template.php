@@ -15,12 +15,12 @@
     </head>
 	<body>
         <div id="container">
-            <span class="mynav">
+            <div class="mynav">
                     <ul>
                        <li><a href="/homepage">HOME</a></li>
                         <li><a href="/catalog">CATALOG</a></li>
                     </ul>
-                </span>
+                </div>
             <div class="title-container">
                 <h1>{pagetitle}</h1>
             </div>
