@@ -6,6 +6,12 @@
  * Time: 12:55 AM
  */
 
+/**
+ * Categories model
+ *
+ * Extends the CSV Model and reads in the category for a pizza topping, such as
+ * Sauce, cheese type, topping1 and topping2.
+ */
 class Categories extends CSV_Model
 {
     public $categoryId;
