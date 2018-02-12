@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" media="all" href="../css/reset.css" />
         <link rel="stylesheet" type="text/css" media="all" href="../css/text.css" />
         <link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="../css/lightbox.css" />
+       <!-- <link rel="stylesheet" type="text/css" media="all" href="../css/lightbox.css" /> -->
 
     </head>
 	<body>
