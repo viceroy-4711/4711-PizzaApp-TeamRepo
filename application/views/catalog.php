@@ -3,7 +3,7 @@
     <!--  the area for all accessories to be overlayed on a pizza crust -->
     <div class="layer">
         <!-- The pizza crust for adding ingrediants on  -->
-        <img id="pizzacrust" src="assets/images/crust.png" alt="PizzaCrust">
+        <img id="pizzacrust" src="/assets/images/crust.png" alt="PizzaCrust">
 
         <!-- all the accessories -->
         <?php $temp = -1; ?>
@@ -35,6 +35,8 @@
                 </span>
             </div>
         <?php endforeach; ?>
+
+        {ingredients}
     </div>
 
     <!-- hard coded for this assignment-->
@@ -51,10 +53,7 @@
         </form>
     </div>
 
-
-
 </div>
-
 
 <script>
     function setVisibility(img) {
