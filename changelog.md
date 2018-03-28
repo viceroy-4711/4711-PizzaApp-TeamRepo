@@ -2,6 +2,9 @@
 
 Comp 4711 - Assignment 2 - Create A Pizza Web App
 
+### Version 2.2
+   - Added catalog buttons from controller (work in progress)
+
 ### Version 2.1
    - Removed all PHP and logic from Homepage
    - Now pulls sets, toppings and stats directly from database
