@@ -22,18 +22,23 @@ class Catalog extends Application
         $categories = $this->categories->all();
 
         $ingredients = "";
+        $pizzaLayers = "";
+        $formFields = "";
 
+        //Generate buttons and fields for categories and accessories
         foreach ($categories as $ctg)
         {
             $ingredients .= "<h3>$ctg->name</h3>";
+            $formFields .= "<input type='text' id='$ctg->categoryId form' name='$ctg->categoryId form' hidden>";
 
             foreach ($accessories as $asc)
             {
+                //Add Accessory under category
                 if ($asc->categoryId == $ctg->categoryId)
                 {
                     $ingredients .= "
                         <div class='tooltip'>
-                            <img id='$asc->categoryId' src='$asc->image' onclick='setVisibility(this)'>
+                            <img id='$asc->categoryId/$asc->accessoryId' src='$asc->image' onclick='setVisibility(this)'>
                             <span class='tooltiptext'>
                                 <h4>$asc->name </h4>
                                 <p>Calories: $asc->calories</p>
@@ -46,13 +51,25 @@ class Catalog extends Application
             }
         }
 
+        //Generate accessory image layers
+        foreach ($accessories as $asc)
+        {
+            $pizzaLayers .= "<img id='$asc->categoryId/$asc->accessoryId' src='$asc->image' style='visibility: hidden'>";
+        }
+
         $this->data['accessories'] = $accessories;
         $this->data['categories'] = $categories;
         $this->data['ingredients'] = $ingredients;
+        $this->data['formFields'] = $formFields;
+        $this->data['pizzaLayers'] = $pizzaLayers;
         $this->data['pagetitle'] = 'Customize Your Pizza';
         $this->data['pagebody'] = 'catalog';
         $this->render();
     }
 
-
+    public function submit()
+    {
+        //$form = $this->input->post();
+        //$set = $this->sets->create();
+    }
 }
