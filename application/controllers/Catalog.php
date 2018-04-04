@@ -69,7 +69,16 @@ class Catalog extends Application
 
     public function submit()
     {
-        //$form = $this->input->post();
-        //$set = $this->sets->create();
+        $form = $this->input->post();
+        $set = $this->sets->create();
+        $set->id = $this->sets->highest() + 1;
+        $set->name = $form['pizzaName'];
+        $set->sauce = $form['0_form'];
+        $set->cheese = $form['1_form'];
+        $set->topping1 = $form['2_form'];
+        $set->topping2 = $form['3_form'];
+
+        $this->sets->add($set);
+        redirect('/homepage');
     }
 }
