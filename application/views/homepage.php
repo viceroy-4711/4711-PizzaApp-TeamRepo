@@ -11,7 +11,7 @@
     <div class="preset">
         {sets}
             <a href="/homepage/display/{id}">
-                <button id="{id}" class="myButton"">
+                <button id="{id}" class="myButton">
                     {name}
                 </button>
                 <br />
