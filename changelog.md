@@ -1,6 +1,9 @@
 # Change Log
 
 Comp 4711 - Assignment 2 - Create A Pizza Web App
+### Version 2.3
+   - Added the foundation for user-roles
+
 
 ### Version 2.2
    - Added catalog buttons from controller (work in progress)

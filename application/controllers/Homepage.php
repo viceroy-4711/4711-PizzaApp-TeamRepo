@@ -72,7 +72,7 @@ class Homepage extends Application
 
             $role = $this->session->userdata('userrole');
             $this->data['pagetitle'] = 'TODO List Maintenance ('. $role . ')';
-            
+
             $calories = $sauce->calories +
                 $cheese->calories +
                 $topping1->calories +
