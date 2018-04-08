@@ -20,4 +20,5 @@ application/logs/*
 .idea/*
 composer.lock
 
+tests/coverage 
 /tmp
