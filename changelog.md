@@ -1,9 +1,18 @@
 # Change Log
 
 Comp 4711 - Assignment 2 - Create A Pizza Web App
+
+### Version 2.4
+   - Added Accessory Entity
+   - Added unit Test for accessories
+   - Enabled travis
+
+### Version 2.4
+   - Removed all PHP and logic from Catalog page
+   - Enabled functionality to create and view new sets 
+
 ### Version 2.3
    - Added the foundation for user-roles
-
 
 ### Version 2.2
    - Added catalog buttons from controller (work in progress)
