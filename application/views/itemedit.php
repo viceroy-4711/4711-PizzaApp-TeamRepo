@@ -8,4 +8,4 @@
 </form>
 {error}
 <a href="/Catalog/cancel"><input type="button" value="Cancel the current edit"/></a>
-<a href="/Catalog/delete"><input type="button" value="Delete this item"/></a>
+<!--<a href="/Catalog/delete"><input type="button" value="Delete this item"/></a>-->
