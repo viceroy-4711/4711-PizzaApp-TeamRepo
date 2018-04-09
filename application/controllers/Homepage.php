@@ -10,26 +10,28 @@
 class Homepage extends Application
 {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/
-	 * 	- or -
-	 * 		http://example.com/welcome/index
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
-	{
-        $this->showit(null);
-	}
-
-	public function display($id)
+    /**
+     * Index Page for this controller.
+     *
+     * Maps to the following URL
+     * 		http://example.com/
+     * 	- or -
+     * 		http://example.com/welcome/index
+     *
+     * So any other public methods not prefixed with an underscore will
+     * map to /welcome/<method_name>
+     * @see https://codeigniter.com/user_guide/general/urls.html
+     */
+    public function index()
     {
+        $this->showit(null);
+    }
+
+    public function display($id)
+    {
+
         $this->showit($id);
+
     }
 
     private function showit($id)
@@ -71,7 +73,7 @@ class Homepage extends Application
                 . "' >";
 
             $role = $this->session->userdata('userrole');
-            $this->data['pagetitle'] = 'Pizza for '. $role .'';
+            $this->data['pagetitle'] = 'Pizza for '. $role . '';
 
             $calories = $sauce->calories +
                 $cheese->calories +
@@ -92,8 +94,6 @@ class Homepage extends Application
             $this->data['protein'] = "Protein: " . $protein;
             $this->data['carbohydrates'] = "Carbohydrates: " . $carbohydrates;
             $this->data['toppings'] = $toppings;
-
-            redirect('/homepage');
             $this->render();
         }
     }
