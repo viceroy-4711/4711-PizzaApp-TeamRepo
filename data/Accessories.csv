@@ -1,5 +1,5 @@
 accessoryId,name,image,calories,protein,carbohydrates,categoryId
-0,Tomato,/assets/images/sauce_tomato.png,180,2,6,0
+0,Tomatooo,/assets/images/sauce_tomato.png,12,3,4,0,"Update Ingredient"
 1,BBQ,/assets/images/sauce_bbq.png,210,1,12,0
 2,Ranch,/assets/images/sauce_ranch.png,450,6,7,0
 3,Blue,/assets/images/cheese_blue.png,280,20,1,1

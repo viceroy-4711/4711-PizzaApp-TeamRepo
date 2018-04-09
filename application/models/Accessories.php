@@ -28,4 +28,16 @@ class Accessories extends CSV_Model
     {
         parent::__construct(APPPATH . "../data/Accessories.csv", "accessoryId", "accessories");
     }
+
+    // validation rules
+    public function rules()
+    {
+        $config = array(
+            ['field' => 'Name', 'label' => 'Ingredient Name', 'rules' => 'alpha_numeric_spaces|max_length[64]'],
+            ['field' => 'Calories', 'label' => 'Calories', 'rules' => 'integer|less_than[5000]'],
+            ['field' => 'Protein', 'label' => 'Protein', 'rules' => 'integer|less_than[5000]'],
+            ['field' => 'Carbohydrates', 'label' => 'Carbohydrates', 'rules' => 'integer|less_than[5000]'],
+        );
+        return $config;
+    }
 }
