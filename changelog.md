@@ -2,10 +2,14 @@
 
 Comp 4711 - Assignment 2 - Create A Pizza Web App
 
+### Version 2.6
+    -fixed homepage
 ### Version 2.5
     - Mtce
     -Changed Navbar
     -Made function to only admin and user will be able to submit the form
+    -updated changelog
+   
 ### Version 2.4
     -Added roles
    - Added Accessory Entity
