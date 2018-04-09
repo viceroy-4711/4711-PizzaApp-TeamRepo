@@ -88,6 +88,6 @@ class Catalog extends Application
 
             $this->sets->add($set);
             redirect('/homepage');
-        
+
     }
 }

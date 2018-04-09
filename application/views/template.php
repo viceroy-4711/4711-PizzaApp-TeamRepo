@@ -23,9 +23,9 @@
                 <li class="about"><a href="#">About</a></li>
                 <a href="javascript:void(0)" class="gracedropbtn">User Role</a>
                 <div class="gracedropdown-content">
-                    <a href="./roles/actor/Guest">-Guest</a>
-                    <a href="./roles/actor/User">-User</a>
-                    <a href="./roles/actor/Admin">-Admin</a>
+                    <li><a href="/roles/actor/Guest">Guest</a></li>
+                    <li><a href="/roles/actor/User">User</a></li>
+                    <li><a href="/roles/actor/Admin">Admin</a></li>
                 </div>
 
             </ul>
