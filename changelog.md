@@ -4,6 +4,7 @@ Comp 4711 - Assignment 2 - Create A Pizza Web App
 
 ### Version 2.6
     -fixed homepage
+    -updated csv
 ### Version 2.5
     - Mtce
     -Changed Navbar
