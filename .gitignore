@@ -18,3 +18,7 @@ application/logs/*
 /nbproject/private/
 /nbproject/
 .idea/*
+composer.lock
+
+tests/coverage 
+/tmp

@@ -1,15 +1,16 @@
 .layer img {
-    position: fixed;
+    position: absolute;
     /*for the img inside your div */
     height: 500px;
     left: 100px;
-    display: none;
     margin-top: 100px;
 }
 
 #pizzacrust {
     z-index: -400;
-    display: inline;
+    /*display: inline;    */
+    position: absolute;
+
 }
 
 .ingrediants img {
@@ -46,6 +47,7 @@
 .tooltip {
     position: relative;
     display: inline-block;
+    /*position: absolute;*/
 }
 
 /* Tooltip text */
@@ -127,4 +129,3 @@
     position:relative;
     top:1px;
 }
-
