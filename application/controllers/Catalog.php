@@ -24,6 +24,7 @@ class Catalog extends Application
         $ingredients = "";
         $pizzaLayers = "";
         $formFields = "";
+        $addButton = "";
 
         //Generate buttons and fields for categories and accessories
         foreach ($categories as $ctg)
@@ -64,6 +65,12 @@ class Catalog extends Application
         $this->data['pizzaLayers'] = $pizzaLayers;
         $this->data['pagetitle'] = 'Customize Your Pizza';
         $this->data['pagebody'] = 'catalog';
+
+        $this->data['addButton'] = $this->parser->parse('emptydiv', [], true);
+        $role = $this->session->userdata('userrole');
+        if($role == ROLE_ADMIN || $role == ROLE_USER){
+            $this->data['addButton'] =  $this->parser->parse("addButton", [], true);
+        }
         $this->render();
     }
 
@@ -78,7 +85,9 @@ class Catalog extends Application
         $set->topping1 = $form['2_form'];
         $set->topping2 = $form['3_form'];
 
-        $this->sets->add($set);
-        redirect('/homepage');
+
+            $this->sets->add($set);
+            redirect('/homepage');
+
     }
 }

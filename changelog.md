@@ -2,7 +2,9 @@
 
 Comp 4711 - Assignment 2 - Create A Pizza Web App
 
-### Version 2.4
+### Version 2.5
+
+    -Added roles
    - Added Accessory Entity
    - Added unit Test for accessories
    - Enabled travis
