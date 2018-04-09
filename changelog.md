@@ -3,6 +3,9 @@
 Comp 4711 - Assignment 2 - Create A Pizza Web App
 
 ### Version 2.4
+    -Changed Navbar
+    -Made function to only admin and user will be able to submit the form
+### Version 2.4
     -Added roles
 
 
