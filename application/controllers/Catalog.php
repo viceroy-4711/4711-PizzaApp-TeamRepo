@@ -20,10 +20,11 @@ class Catalog extends Application
 
         $accessories = $this->accessories->all();
         $categories = $this->categories->all();
-
+        $role = $this->session->userdata('userrole');
         $ingredients = "";
         $pizzaLayers = "";
         $formFields = "";
+        $addButton = "";
 
         //Generate buttons and fields for categories and accessories
         foreach ($categories as $ctg)
@@ -57,12 +58,13 @@ class Catalog extends Application
             $pizzaLayers .= "<img id='$asc->categoryId/$asc->accessoryId' src='$asc->image' style='visibility: hidden'>";
         }
 
+
         $this->data['accessories'] = $accessories;
         $this->data['categories'] = $categories;
         $this->data['ingredients'] = $ingredients;
         $this->data['formFields'] = $formFields;
         $this->data['pizzaLayers'] = $pizzaLayers;
-        $this->data['pagetitle'] = 'Customize Your Pizza';
+        $this->data['pagetitle'] = 'Cuztomize your pizza,'. $role .'';
         $this->data['pagebody'] = 'catalog';
         $this->render();
     }
@@ -78,7 +80,12 @@ class Catalog extends Application
         $set->topping1 = $form['2_form'];
         $set->topping2 = $form['3_form'];
 
-        $this->sets->add($set);
+        $role = $this->session->userdata('userrole');
+        if($role == ROLE_ADMIN || $role == ROLE_USER)
+        {
+            $this->sets->add($set);
+            redirect('/homepage');
+        }
         redirect('/homepage');
     }
 }
