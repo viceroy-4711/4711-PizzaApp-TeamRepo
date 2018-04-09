@@ -1,5 +1,5 @@
 body{font:13px/1.5 Helvetica,Arial,'Liberation Sans',FreeSans,sans-serif}
-a:focus{outline:1px dotted invert}
+a:focus{outline:1px dotted invert; font-size:25px}
 hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}
 h1{font-size:25px; margin-top: 20px; margin-left:100px; color: #412a2c;}
 h2{font-size:23px}

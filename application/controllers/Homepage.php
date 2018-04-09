@@ -71,7 +71,7 @@ class Homepage extends Application
                 . "' >";
 
             $role = $this->session->userdata('userrole');
-            $this->data['pagetitle'] = 'TODO List Maintenance ('. $role . ')';
+            $this->data['pagetitle'] = 'Pizza for '. $role .'';
 
             $calories = $sauce->calories +
                 $cheese->calories +
@@ -92,6 +92,8 @@ class Homepage extends Application
             $this->data['protein'] = "Protein: " . $protein;
             $this->data['carbohydrates'] = "Carbohydrates: " . $carbohydrates;
             $this->data['toppings'] = $toppings;
+
+            redirect('/homepage');
             $this->render();
         }
     }
