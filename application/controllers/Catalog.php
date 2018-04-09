@@ -78,7 +78,11 @@ class Catalog extends Application
         $set->topping1 = $form['2_form'];
         $set->topping2 = $form['3_form'];
 
-        $this->sets->add($set);
-        redirect('/homepage');
+        $role = $this->session->userdata('userrole');
+        if($role == ROLE_ADMIN || $role == ROLE_USER)
+        {
+            $this->sets->add($set);
+            redirect('/homepage');
+        }
     }
 }
