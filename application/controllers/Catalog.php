@@ -24,7 +24,6 @@ class Catalog extends Application
         $ingredients = "";
         $pizzaLayers = "";
         $formFields = "";
-        $addButton = "";
 
         //Generate buttons and fields for categories and accessories
         foreach ($categories as $ctg)

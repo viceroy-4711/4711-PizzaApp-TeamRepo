@@ -7,6 +7,6 @@ id,name,sauce,cheese,topping1,topping2
 5,Kun,0,4,6,8
 6,test1,0,3,6,8
 7,test3,0,3,6,8
-8,user1,,,,
+8,user1,0,3,6,8
 9,user1,0,4,6,8
 10,"admin1 ",0,3,6,8
