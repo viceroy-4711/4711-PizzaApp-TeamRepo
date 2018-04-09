@@ -24,7 +24,6 @@
             <li><a>{pagetitle}</a></li>
             <li class="home"><a href="/homepage">Home</a></li>
             <li class="tutorials"><a href="/catalog">Catalogs</a></li>
-            <li class="about"><a href="#">About</a></li>
             <a href="javascript:void(0)" class="gracedropbtn">User Role</a>
             <div class="gracedropdown-content">
                 <li><a href="/roles/actor/Guest">Guest</a></li>
