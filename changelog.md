@@ -1,6 +1,8 @@
 # Change Log
 
 Comp 4711 - Assignment 2 - Create A Pizza Web App
+### Version 2.7
+    -Enabled travis on team repo
 
 ### Version 2.6
     -fixed homepage
