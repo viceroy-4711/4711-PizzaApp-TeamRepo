@@ -14,17 +14,27 @@
 
     </head>
 	<body>
-        <div id="container">
-            <div class="mynav">
-                    <ul>
-                       <li><a href="/homepage">HOME</a></li>
-                        <li><a href="/catalog">CATALOG</a></li>
-                    </ul>
+    <div id="container">
+        <div class="grace1">
+            <ul>
+                <li><a>{pagetitle}</a></li>
+                <li class="home"><a href="/homepage">Home</a></li>
+                <li class="tutorials"><a href="/catalog">Catalogs</a></li>
+                <li class="about"><a href="#">About</a></li>
+                <a href="javascript:void(0)" class="gracedropbtn">User Role</a>
+                <div class="gracedropdown-content">
+                    <a href="./roles/actor/Guest">-Guest</a>
+                    <a href="./roles/actor/User">-User</a>
+                    <a href="./roles/actor/Admin">-Admin</a>
                 </div>
-            <div class="title-container">
-                <h1>{pagetitle}</h1>
-            </div>
-			{content}
+
+            </ul>
         </div>
-	</body>
+        <div class="title-container">
+
+        </div>
+        {content}
+    </div>
+
+    </body>
 </html>
