@@ -29,7 +29,9 @@ class Homepage extends Application
 
 	public function display($id)
     {
-        $this->showit($id);
+
+            $this->showit($id);
+
     }
 
     private function showit($id)

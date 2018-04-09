@@ -11,20 +11,8 @@
     <!--All the ingrediants to be added on the pizza-->
     <div id="allIngrediants" class="ingrediants">
         {ingredients}
-        <form role="form" action="/catalog/submit" method="post" >
-            {formFields}
-            <input id="pizzaName" name="pizzaName" type="text" placeholder="Pizza Name" required>
-            <input id="customizesave" class="myButton" type="submit" value="Save">
-        </form>
+        {addButton}
     </div>
-
-    <!--    <form role="form" action="/catalog/submit" method="post" >-->
-    <!--        {formFields}-->
-    <!--        <input id="pizzaName" name="pizzaName" type="text" placeholder="Pizza Name" required>-->
-    <!--        <input id="customizesave" class="myButton" type="submit" value="Save">-->
-    <!--    </form>-->
-
-
 </div>
 
 <script>
